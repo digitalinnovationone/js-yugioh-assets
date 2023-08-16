@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+.bg-video {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-video .video {
+  height: 100vh;
+}
+
+.bg-video::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.score_box {
+  padding: 30px;
+  background-color: #f0f8ff;
+}
+
+.container__left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container__right {
+  width: 65%;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card-box__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.card-versus {
+  padding-top: 1rem;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.versus-top,
+.versus-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.versus-bottom {
+  margin-top: 20px;
+}
+
+#next-duel {
+  display: none;
+}
+
+.card-box {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.frame {
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.frame-bold {
+  border: 6px solid black;
+  border-radius: 5px;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.card-infield {
+  height: 11.2rem;
+  width: 8rem;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.card-details {
+  border: 3px solid black;
+  background-color: #f0f8ff;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  width: 90%;
+}
+
+#card-name {
+  font-size: 0.8rem;
+}
+
+#card-type {
+  font-size: 1rem;
+}
