@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="banner">
+    <header class="banner framed-golden">
         <h1>Yugi-Oh!</h1>
     </header>
 
@@ -24,28 +24,47 @@
         </div>
 
         <section class="container">
-            <aside class="container__left">
-                <div class="score_box">
-                    <span id="score_points">Win: 0 | Lose: 0</span>
+            <aside class="container__left framed-golden-2">
+                <div class="score_box frame">
+                    <span id="score_points"><strong>Win :</strong> 0 <strong>Lose:</strong> 0</span>
                 </div>
                 <div class="menu_avatar">
                     <img alt="" id="card-image" />
                 </div>
-                <div class="card_details">
-                    <p id="card-name"></p>
-                    <p id="card-type"></p>
+                <div class="card_details frame">
+                    <p id="card-name">Apagar-depois</p>
+                    <p id="card-type">Apagar-depois</p>
                 </div>
             </aside>
             <article class="container__right">
-                <div class="card-box">
+                <div class="card-box__container">
+                    <div class="card-box framed" id="computer-cards">
 
+                    </div>
+                    <div class="card-versus">
+                        <div class="versus-top">
+                            <div class="card-infield">
+                                <img id="player-field-card" height="180px" width="125px" alt="Carta do jogador no campo">
+                            </div>
+                            <img src="./src/assets/icons/millenium2.png" height="100px" alt="">
+                            <div class="card-infield">
+                                <img id="computer-field-card" height="180px" width="125px" alt="Carta do computador no campo">
+                            </div>
+                        </div>
+                        <div class="versus-bottom">
+                            <button class="rpgui-button" id="next-duel" onclick="resetDuel()">GANHOU</button>
+                        </div>
+                    </div>
+                    <div class="card-box framed" id="player-cards">
+                        
+                    </div>
                 </div>
             </article>
         </section>
 
     </main>
 
-    <footer class="social-media">
+    <footer class="social-media framed-golden-2">
         <p class="social-media__message">&copy; 2023 - Juliana Chaves Palm</p>
             <ul class="social-media__adresses">
                 <li><a href="https://www.linkedin.com/in/julianachavespalm" class="social-media__link" title="Linkedin" aria-label="Linkedin"><i class="fa-brands fa-linkedin" aria-disabled="true"></i></a></li>

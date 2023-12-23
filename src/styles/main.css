@@ -3,9 +3,6 @@
     height: 10vh;
     padding: 1rem;
 
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1)    0%,
-                                      rgba(0, 0, 0, 0.8) 50%,
-                                      rgba(0, 0, 0, 1)  100%);
 }
 
 .banner h1 {
@@ -18,9 +15,9 @@
 .board {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     height: 80vh;
+    width: 100%;
 }
 
 .bg-video {
@@ -54,17 +51,72 @@
 
 
 
-.contain {
+.container {
     position: relative;
+    height: 100%;
+    display: flex;
+
+    color: #000000;
+
     z-index: 3;
 }
 
-.social-media {
+
+.container__left {
+    width: 35%;
+}
+
+.score_box {
+    padding: 30px;
+
+    background-color: #ffffff;
+}
+
+.frame {
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+.card_details {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+    padding: 1rem;
+
+    background-color: #ffffff;
+}
+
+#card-name {
+    font-size: 0.8rem;
+}
+
+#card-type {
+    font-size: 1rem;
+}
+
+.container__right {
+    width: 65vw;
+    height: 90vh;
+}
+
+.card-infield {
+    border: 1px solid #fff;
+    height: 180px !important;
+    width: 125px;
+}
+
+
+
+
+
+.social-media {
+    display: flex;
     justify-content:space-between;
     align-items: center;
-    width: 100vw;
+    width: 35vw;
     height: 10vh;
     padding: 1rem;
 
@@ -73,16 +125,32 @@
                                       rgba(0, 0, 0, 1)  100%);
     
     font-family: 'Roboto', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
 }
 
 .social-media__adresses {
     display: flex;
     margin: 1rem 0;
     list-style: none;
+
+    transition: all ease 0.9s;
+}
+
+.social-media__adresses li:hover,
+.social-media__adresses li:focus,
+.social-media__adresses a:hover,
+.social-media__adresses a:focus {
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    outline: none;
+
+    scale: 1.3;
 }
 
 .social-media__link {
     margin: 0 0.5rem;
+
+    font-size: 1.25rem;
     color: inherit;
 }
