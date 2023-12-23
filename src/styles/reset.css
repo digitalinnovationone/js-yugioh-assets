@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "Press Start 2P", cursive;
   user-select: none;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
 }

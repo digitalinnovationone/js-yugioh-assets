@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Yugi-Oh!</h1>
+        </nav>
+
+    <main class="board">
+        <div class="bg-video">
+            <video class="video" autoplay loop muted>
+                <source src="./src/assets/video/yugi.mp4" type="video/mp4"/>
+                <p>Seu navegador não suporta video.</p>
+            </video>
+        </div>
+
+        <section class="container">
+            <aside class="container__left">
+                <div class="score_box">
+                    <span id="score_points">Win: 0 | Lose: 0</span>
+                </div>
+                <div class="menu_avatar">
+                    <img alt="" id="card-image" />
+                </div>
+                <div class="card_details">
+                    <p id="card-name"></p>
+                    <p id="card-type"></p>
+                </div>
+            </aside>
+            <article class="container__right">
+                <div class="card-box">
+
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="social-media">
+        <p class="social-media__message">&copy; 2023 - Juliana Chaves Palm</p>
+            <ul class="social-media__adresses">
+                <li><a href="https://www.linkedin.com/in/julianachavespalm" class="social-media__link" title="Linkedin" aria-label="Linkedin"><i class="fa-brands fa-linkedin" aria-disabled="true"></i></a></li>
+                <li><a href="www.github.com/julianachavespalm" class="social-media__link" title="Github" aria-label="Github"><i class="fa-brands fa-github-alt" aria-disabled="true"></i></a></li>
+            </ul>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/e0954b0c75.js" crossorigin="anonymous"></script>
+    <script src="./src/scripts/engine.js"></script>
+</body>
+</html>
