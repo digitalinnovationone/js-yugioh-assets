@@ -5,9 +5,15 @@
   margin: 0;
   padding: 0;
   border: 0;
-  user-select: none;
+  /* user-select: none; remover depois o comentário*/ 
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  
   font-family: 'Press Start 2P', sans-serif;
+  color: #ffffff;
 }
