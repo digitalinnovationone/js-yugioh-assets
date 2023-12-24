@@ -102,10 +102,52 @@
     height: 90vh;
 }
 
+.card-box__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0.25rem;
+
+}
+
+.card-versus__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.25rem;
+    margin-top: 5rem;
+    height: 300px;
+}
+
+.versus-top,
+.versus-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.versus-bottom {
+    margin-top: 1rem;
+}
+
+#next-duel {
+    display: none;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 9rem;
+}
+
 .card-infield {
+    height: 11.2rem !important;
+    width: 8rem;
+    
     border: 1px solid #fff;
-    height: 180px !important;
-    width: 125px;
+    border-radius: 8px;
 }
 
 
