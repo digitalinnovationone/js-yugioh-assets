@@ -5,15 +5,16 @@
   margin: 0;
   padding: 0;
   border: 0;
-  /* user-select: none; remover depois o comentário*/ 
+  user-select: none;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: 100vw;
   height: 100vh;
   
   font-family: 'Press Start 2P', sans-serif;
-  color: #ffffff;
+  color: #000000;
 }

@@ -1,26 +1,56 @@
+body {
+    cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+.muteButton,
+.muteButton:hover {
+    cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), default;
+}
+
+.muteButton {
+    width: 80px;
+    padding: 0.25rem;
+
+    border: 2px solid #000000;
+    border-radius: 5px;
+    
+    background: transparent;
+
+    box-shadow: inset 0px 2px 2px #000000;
+
+    font-weight: 700;
+}
+
+.social-media a,
+button,
+.muteButton,
+.muteButton:hover,
+a,
+a:hover,
+img:hover,
+button:hover {
+    cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), default;
+}
+
 .banner {
     width: 100vw;
     height: 10vh;
     padding: 1rem;
-
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1)    0%,
-                                      rgba(0, 0, 0, 0.8) 50%,
-                                      rgba(0, 0, 0, 1)  100%);
 }
 
 .banner h1 {
     font-size: 1rem;
     text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
 }
-
-
 
 .board {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     height: 80vh;
+    width: 100%;
 }
 
 .bg-video {
@@ -51,38 +81,146 @@
                                       rgba(0, 0, 0, 1)  100%);
 }
 
-
-
-
-.contain {
+.container {
     position: relative;
+    height: 100%;
+    display: flex;
+    color: #000000;
     z-index: 3;
+}
+
+.container__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.score_box {
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.frame {
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+.card_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+#card-name {
+    font-size: 0.8rem;
+}
+
+#card-type {
+    font-size: 1rem;
+}
+
+.container__right {
+    width: 65vw;
+    height: 90vh;
+}
+
+.card-box__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0.25rem;
+}
+
+.card-versus__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.25rem;
+    height: 300px;
+}
+
+.versus-top,
+.versus-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.versus-bottom {
+    margin-top: 1rem;
+}
+
+#next-duel {
+    display: none;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 143.8px;
+}
+
+.card-infield {
+    height: 11.2rem !important;
+    width: 8rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.card {
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+}
+
+#player-cards .card:hover {
+    transform: scale(1.2);
 }
 
 .social-media {
     display: flex;
-    flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 35vw;
     height: 10vh;
     padding: 1rem;
-
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1)    0%,
-                                      rgba(0, 0, 0, 0.8) 50%,
-                                      rgba(0, 0, 0, 1)  100%);
-    
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
     font-family: 'Roboto', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
+    cursor: url("../assets/cursor/seu-cursor.png"), default;
+
 }
 
 .social-media__adresses {
     display: flex;
     margin: 1rem 0;
     list-style: none;
+    transition: all ease 0.9s;
+}
+
+.social-media__adresses li:hover,
+.social-media__adresses li:focus,
+.social-media__adresses a:hover,
+.social-media__adresses a:focus {
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    scale: 1.3;
 }
 
 .social-media__link {
     margin: 0 0.5rem;
+    font-size: 1.25rem;
     color: inherit;
 }
