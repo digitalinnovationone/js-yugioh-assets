@@ -192,24 +192,16 @@ async function hiddenCardDetails() {
     state.cardSprites.type.innerText = "";
 };
 
-function muteButton() {
-    const bgm = document.getElementById("bgm");
-    const muteButton = document.getElementById("muteButton");
-
-    muteButton.addEventListener('click', () => {
-        if (bgm.paused) {
-            bgm.play();
+const bgm = document.getElementById("bgm");
+bgm.play();
 
 function init() {
-    muteButton();
-
     showHiddenCards(false)
 
     drawCards(5, state.playerSides.player1);
     drawCards(5, state.playerSides.computer);
 
-    const bgm = document.getElementById("bgm");
-    bgm.play();
+    
 };
 
 init();
