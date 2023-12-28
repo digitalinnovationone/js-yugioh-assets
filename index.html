@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <title>Yugi-Po!</title>
+</head>
+<body>
+    <header class="banner framed-golden">
+        <h1>Yugi-Po: The Ultimate Yugi-Oh Rock-Paper-Scissors Game!</h1>
+    </header>
+
+    <main class="board">
+        <div class="bg-video">
+            <video class="video" autoplay loop muted>
+                <source src="./src/assets/video/yugi.mp4" type="video/mp4"/>
+                <p>Seu navegador não suporta video.</p>
+            </video>
+        </div>
+
+        <section class="container">
+            <aside class="container__left framed-golden-2">
+                <div class="score_box frame">
+                    <span id="score_points"><strong>Win :</strong> 0 <strong>Lose:</strong> 0</span>
+                </div>
+                <div class="menu_avatar">
+                    <img alt="" id="card-image" />
+                </div>
+                <div class="card_details frame">
+                    <p id="card-name">Select a card.</p>
+                    <p id="card-type"></p>
+                </div>
+            </aside>
+            <article class="container__right">
+                <div class="card-box__container">
+                    <div class="card-box framed" id="computer-cards">
+
+                    </div>
+                    <div class="card-versus__container">
+                        <div class="versus-top">
+                            <div class="card-infield">
+                                <img id="player-field-card" height="180px" width="125px" aria-label="Carta do jogador no campo">
+                            </div>
+                            <img src="./src/assets/icons/millenium2.png" height="100px" alt="">
+                            <div class="card-infield">
+                                <img id="computer-field-card" height="180px" width="125px" aria-label="Carta do computador no campo">
+                            </div>
+                        </div>
+                        <div class="versus-bottom">
+                            <button class="rpgui-button" id="next-duel" onclick="resetDuel()">GANHOU</button>
+                        </div>
+                    </div>
+                    <div class="card-box framed" id="player-cards">
+                        
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="social-media framed-golden-2">
+        <p class="social-media__message">&copy; 2023 - Juliana Chaves Palm</p>
+        <ul class="social-media__adresses">
+            <li><a href="https://www.linkedin.com/in/julianachavespalm" class="social-media__link" title="Linkedin" aria-label="Linkedin"><i class="fa-brands fa-linkedin" aria-disabled="true"></i></a></li>
+            <li><a href="www.github.com/julianachavespalm" class="social-media__link" title="Github" aria-label="Github"><i class="fa-brands fa-github-alt" aria-disabled="true"></i></a></li>
+        </ul>
+        <audio id="bgm" loop>
+            <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3" />
+        </audio>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/e0954b0c75.js" crossorigin="anonymous"></script>
+    <script src="./src/scripts/engine.js"></script>
+</body>
+</html>
