@@ -199,16 +199,6 @@ function muteButton() {
     muteButton.addEventListener('click', () => {
         if (bgm.paused) {
             bgm.play();
-            muteButton.textContent = "Mute";
-        } else {
-            bgm.pause();
-            muteButton.textContent = "Unmute";
-        }
-    });
-
-    muteButton.textContent = bgm.paused ? "Unmute" : "Mute";
-}
-
 
 function init() {
     muteButton();
