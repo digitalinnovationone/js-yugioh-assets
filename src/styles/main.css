@@ -36,10 +36,6 @@ button:hover {
     width: 100vw;
     height: 10vh;
     padding: 1rem;
-<<<<<<< HEAD
-=======
-
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
 }
 
 .banner h1 {
@@ -85,17 +81,10 @@ button:hover {
                                       rgba(0, 0, 0, 1)  100%);
 }
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
 .container {
     position: relative;
     height: 100%;
     display: flex;
-<<<<<<< HEAD
     color: #000000;
     z-index: 3;
 }
@@ -105,25 +94,11 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-=======
-
-    color: #000000;
-
-    z-index: 3;
-}
-
-
-.container__left {
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
     width: 35%;
 }
 
 .score_box {
     padding: 30px;
-<<<<<<< HEAD
-=======
-
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
     background-color: #ffffff;
 }
 
@@ -133,7 +108,6 @@ button:hover {
 }
 
 .card_details {
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,87 +190,6 @@ button:hover {
 .social-media {
     display: flex;
     justify-content: space-between;
-=======
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 6rem;
-    width: 100%;
-    padding: 1rem;
-
-    background-color: #ffffff;
-}
-
-#card-name {
-    font-size: 0.8rem;
-}
-
-#card-type {
-    font-size: 1rem;
-}
-
-.container__right {
-    width: 65vw;
-    height: 90vh;
-}
-
-.card-box__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 0.25rem;
-
-}
-
-.card-versus__container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.25rem;
-    margin-top: 5rem;
-    height: 300px;
-}
-
-.versus-top,
-.versus-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.versus-bottom {
-    margin-top: 1rem;
-}
-
-#next-duel {
-    display: none;
-}
-
-.card-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 9rem;
-}
-
-.card-infield {
-    height: 11.2rem !important;
-    width: 8rem;
-    
-    border: 1px solid #fff;
-    border-radius: 8px;
-}
-
-
-
-
-
-.social-media {
-    display: flex;
-    justify-content:space-between;
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
     align-items: center;
     width: 35vw;
     height: 10vh;
@@ -304,21 +197,14 @@ button:hover {
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
     font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
-<<<<<<< HEAD
     cursor: url("../assets/cursor/seu-cursor.png"), default;
 
-=======
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
 }
 
 .social-media__adresses {
     display: flex;
     margin: 1rem 0;
     list-style: none;
-<<<<<<< HEAD
-=======
-
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
     transition: all ease 0.9s;
 }
 
@@ -330,19 +216,11 @@ button:hover {
     border: none;
     overflow: hidden;
     outline: none;
-<<<<<<< HEAD
-=======
-
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
     scale: 1.3;
 }
 
 .social-media__link {
     margin: 0 0.5rem;
-<<<<<<< HEAD
-=======
-
->>>>>>> a02c055e5b90a46c1e45bcac71305ff14fe93ffe
     font-size: 1.25rem;
     color: inherit;
 }
