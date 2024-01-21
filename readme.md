@@ -18,7 +18,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Para utilizar o YU-GI-OH JO-KEN-PO siga estas etapas:
 
-- Abra o link: https://maurochavesjr.github.io/yu-gi-oh/
+- Abra o link: https://maurochavesjr.github.io/js-yugioh-assets/
 
 ## 🤝 Colaboradores
 
