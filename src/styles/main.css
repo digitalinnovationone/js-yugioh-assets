@@ -1,0 +1,139 @@
+body{
+    cursor: url("../assets/cursor/yugicursor.png"),default;
+}
+button,
+a,
+img:hover,
+a:hover{
+    cursor:url("../assets/cursor/yamiyugicursorGLOW.png"),default;
+}
+.bg-video{
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-video .video{
+    height: 100vh;
+    
+}
+
+.bg-video::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,#000000 0%, #000000cc 50%,#000000 100%);
+}
+
+.container{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    height: 100vh;
+}
+.container_left{
+    width: 35%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.container_right{
+    width: 65%;
+
+}
+.score_box{
+    background-color: #fff;
+    padding: 30px;
+
+}
+.frame{
+    border:3px solid #000;
+    border-radius: 5px;
+}
+.card_details{
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+}
+#card-name{
+    font-size: 0.8rem;
+
+}
+#card-type{
+    font-size: 1rem;
+    
+}
+.card-box__container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+.card-versus__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top:0.1rem;
+    height: 300px;
+    
+    
+}
+.versus-top, .versus-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.versus-bottom{
+    margin-top: 1rem;
+
+}
+#next-duel{
+    display: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.card-box{
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card-infield{
+    height: 11.2rem;
+    border: 1px solid #fff;
+    width: 8rem;
+    border-radius: 8px;
+
+}
+
+
+.card{
+    transition: transform 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+
